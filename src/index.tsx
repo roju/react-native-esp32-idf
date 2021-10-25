@@ -162,7 +162,7 @@ export interface EspEventEmitter extends NativeEventEmitter {
 
 const { RNEsp32Idf } = NativeModules as { RNEsp32Idf: EspProvisioning }
 
-const eventEmitter: EspEventEmitter = new NativeEventEmitter(RNEsp32Idf as any)
+export const eventEmitter: EspEventEmitter = new NativeEventEmitter(RNEsp32Idf as any)
 
 export default RNEsp32Idf
 
